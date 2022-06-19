@@ -1,6 +1,10 @@
 package ss8.Bai_tap;
 
 public class TennisGame {
+    final static int LOVE = 0 ;
+    final static int FIFTEEN = 1 ;
+    final static int THIRTY = 2 ;
+    final static int FORTY = 3 ;
 
     public static String getScore(String player1Name, String player2Name, int pointOfPlayer1, int pointOfPlayer2) {
 
@@ -10,16 +14,16 @@ public class TennisGame {
 
         if (pointOfPlayer1 == pointOfPlayer2) {
             switch (pointOfPlayer1) {
-                case 0:
+                case LOVE:
                     score = "Love-All";
                     break;
-                case 1:
+                case FIFTEEN:
                     score = "Fifteen-All";
                     break;
-                case 2:
+                case THIRTY:
                     score = "Thirty-All";
                     break;
-                case 3:
+                case FORTY:
                     score = "Forty-All";
                     break;
                 default:
@@ -50,16 +54,16 @@ public class TennisGame {
                     tempScore = pointOfPlayer2;
                 }
                 switch (tempScore) {
-                    case 0:
+                    case LOVE:
                         score += "Love";
                         break;
-                    case 1:
+                    case FIFTEEN:
                         score += "Fifteen";
                         break;
-                    case 2:
+                    case THIRTY:
                         score += "Thirty";
                         break;
-                    case 3:
+                    case FORTY:
                         score += "Forty";
                         break;
                 }

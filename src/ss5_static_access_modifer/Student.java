@@ -9,6 +9,7 @@ public class Student{
     public static String school="CodeGym";
 
     public Student() {
+
     }
     public Student(int id, String name, String address, boolean gender, String email, String school) {
         this.id = id;
@@ -77,7 +78,7 @@ public class Student{
     }
     // hàm tostring biểu diễn thông tin của đối tượng
     @Override
-    public String toString() {
+    public  String toString() {
         return "Student{" +
                 "id=" + id +
                 ", name='" + name + '\'' +

@@ -12,14 +12,14 @@ public class Test {
             System.out.println("old Area = " + s.getArea());
             if (s instanceof Circle){
                 Circle cr = (Circle) s;
-                cr.Resize(p);
+                cr.resize(p);
                 System.out.println("new ARea of Circle = " + cr.getArea());
             }if (s instanceof Rectangle){
-                ((Rectangle) s).Resize(p);
+                ((Rectangle) s).resize(p);
                 System.out.println("new area of Rectangle ="+s.getArea());
             }if (s instanceof Square){
                 Square sq = (Square) s;
-                sq.Resize(p);
+                sq.resize(p);
                 System.out.println("new area of Square = " + sq.getArea());
                 sq.howToColor();
             }
